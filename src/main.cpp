@@ -2,7 +2,7 @@
 #include <Wifi.h>
 #include <PubSubClient.h>
 
-
+//insert your WiFi and broker info
 const char* ssid = "your WiFi ssid";
 const char* password = "WiFi password";
 const char* brokerUser = "name";
@@ -11,6 +11,8 @@ const char* broker = "mqtt-broker-adress";
 const char* outTopic = "topic/out";
 const char* inTopic = "topic/in";
 uint16_t port = 1883;
+
+
 
 WiFiClient espClient;
 PubSubClient client(espClient);
